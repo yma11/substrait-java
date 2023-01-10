@@ -51,10 +51,10 @@ public interface FunctionArg {
           throws RuntimeException {
         var enumBldr = FunctionArgument.Enum.newBuilder();
 
-        if (ea.value().isPresent()) {
-          enumBldr = enumBldr.setSpecified(ea.value().get());
-        }
-        return FunctionArgument.newBuilder().setEnum(enumBldr.build()).build();
+     //   if (ea.value().isPresent()) {
+       //   enumBldr = enumBldr.setSpecified(ea.value().get());
+        //}
+        return FunctionArgument.newBuilder().setEnum(ea.value().get()).build();
       }
     };
   }
